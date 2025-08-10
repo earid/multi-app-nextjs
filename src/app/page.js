@@ -11,14 +11,14 @@ export default function HomePage() {
           <p>Go back to the main page</p>
         </Link>
 
-        <Link href="/todo" className={styles.card}>
-          <h2>📝 To-Do App</h2>
-          <p>Manage your daily tasks</p>
+        <Link href="/random-user" className={styles.card}>
+          <h2>🗣 Random USer</h2>
+          <p>Fetch random USer</p>
         </Link>
 
-        <Link href="/calculator" className={styles.card}>
-          <h2>🧮 Calculator</h2>
-          <p>Perform quick calculations</p>
+        <Link href="/data-fetch" className={styles.card}>
+          <h2>🧮 Data Fetch </h2>
+          <p>useEffect uses on simple ApI fetch</p>
         </Link>
 
         <Link href="/counter" className={styles.card}>

@@ -14,6 +14,7 @@ export default function Navbar() {
         <Link href="/">Home</Link>
         <Link href="/counter">Counter</Link>
         <Link href="/data-fetch">Data Fetch</Link>
+        <Link href="/random-user">Random User</Link>
       </div>
     </nav>
   );

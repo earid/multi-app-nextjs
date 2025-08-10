@@ -23,3 +23,59 @@
 .userItem:hover {
   background-color: #e0f0ff;
 }
+/* তোমার আগের স্টাইল থাকবে এখানে ... */
+
+.codeSection {
+  margin-top: 3rem;
+  padding: 1rem;
+  background: #eee;
+  border-radius: 8px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.codeSection h3 {
+  margin-bottom: 0.5rem;
+}
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.05);
+}
+
+.userList {
+  list-style: none;
+  padding: 0;
+}
+
+.userItem {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.1rem;
+  color: #333;
+  transition: background 0.2s ease;
+}
+
+.userItem:hover {
+  background-color: #e0f0ff;
+}
+
+.codeSection {
+  margin-top: 3rem;
+  padding: 1rem;
+  background: #eee;
+  border-radius: 8px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.codeSection h3 {
+  margin-bottom: 0.5rem;
+}
