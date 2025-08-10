@@ -13,6 +13,7 @@ export default function Navbar() {
       <div className={styles.menu}>
         <Link href="/">Home</Link>
         <Link href="/counter">Counter</Link>
+        <Link href="/data-fetch">Data Fetch</Link>
       </div>
     </nav>
   );
