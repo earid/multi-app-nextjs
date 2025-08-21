@@ -33,9 +33,9 @@ export default function HomePage() {
           <p>Weather App</p>
         </Link>
 
-        <Link href="/random-user" className={styles.card}>
-          <h2>🗣 Random USer</h2>
-          <p>Fetch random USer</p>
+        <Link href="/crypto-prices" className={styles.card}>
+          <h2>💱 Crypto Price </h2>
+          <p>Crypto Prices Fetch from API</p>
         </Link>
 
         <Link href="/data-fetch" className={styles.card}>
