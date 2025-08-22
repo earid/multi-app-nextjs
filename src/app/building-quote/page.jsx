@@ -117,32 +117,45 @@ export default function BuildingQuote() {
     // Final Quote
     return (
       <div className={styles.container}>
-        <h1>ফাইনাল কোট</h1>
-        <h2 className={styles.total}>
+        <div className={styles.stepNumber}>ফাইনাল কোট</div>
+        <div className={styles.total}>
           মোট আনুমানিক খরচ: ৳{calculateTotal().toLocaleString()}
-        </h2>
-        <div className={styles["selected-options"]}>
-          <h3>আপনার নির্বাচিত অপশনগুলো:</h3>
+        </div>
+        <div className={styles.selectedOptions}>
+          <div>আপনার নির্বাচিত অপশনগুলো:</div>
           <ul>
             {Object.values(answers).map((ans, idx) => (
               <li key={idx}>{ans.label}</li>
             ))}
           </ul>
         </div>
-        <button onClick={() => setCurrentStep(0)}>ফিরে যান শুরুতে</button>
+        <button className={styles.btn} onClick={() => setCurrentStep(0)}>
+          আবার শুরু করুন
+        </button>
       </div>
     );
   }
 
   const question = questions[currentStep];
+  const progressPercent = (currentStep / questions.length) * 100;
 
   return (
     <div className={styles.container}>
-      <h1>বিল্ডিং কোট ফর্ম</h1>
+      <div className={styles.title}>বিল্ডিং কোট ফর্ম</div>
+
+      <div className={styles.progressContainer}>
+        <div
+          className={styles.progressBar}
+          style={{ width: `${progressPercent}%` }}
+        />
+      </div>
+
+      <div className={styles.stepNumber}>
+        Step {currentStep + 1} of {questions.length}
+      </div>
+
       <div className={styles.question}>
-        <h3>
-          {currentStep + 1}. {question.text}
-        </h3>
+        <div>{question.text}</div>
         {question.options.map((opt, idx) => (
           <div key={idx} className={styles.option}>
             <label>
@@ -158,11 +171,20 @@ export default function BuildingQuote() {
           </div>
         ))}
       </div>
+
       <div>
-        <button onClick={prevStep} disabled={currentStep === 0}>
+        <button
+          className={styles.btn}
+          onClick={prevStep}
+          disabled={currentStep === 0}
+        >
           পূর্ববর্তী
         </button>
-        <button onClick={nextStep} disabled={!answers[question.id]}>
+        <button
+          className={styles.btn}
+          onClick={nextStep}
+          disabled={!answers[question.id]}
+        >
           পরবর্তী
         </button>
       </div>
