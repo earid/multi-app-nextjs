@@ -12,12 +12,12 @@ export default function HomePage() {
         </Link>
 
         <Link href="/random-user" className={styles.card}>
-          <h2>🗣 Random USer</h2>
+          <h2>👔 Random USer</h2>
           <p>Fetch random USer</p>
         </Link>
 
         <Link href="/data-fetch" className={styles.card}>
-          <h2>🧮 Data Fetch </h2>
+          <h2>📈 Data Fetch </h2>
           <p>useEffect uses on simple ApI fetch</p>
         </Link>
 
@@ -34,18 +34,18 @@ export default function HomePage() {
         </Link>
 
         <Link href="/crypto-prices" className={styles.card}>
-          <h2>💱 Crypto Price </h2>
+          <h2>💲 Crypto Price </h2>
           <p>Crypto Prices Fetch from API</p>
         </Link>
 
-        <Link href="/data-fetch" className={styles.card}>
-          <h2>🧮 Data Fetch </h2>
-          <p>useEffect uses on simple ApI fetch</p>
+        <Link href="/quiz" className={styles.card}>
+          <h2>🧩 Small Quiz App</h2>
+          <p>small quiz app for practicce</p>
         </Link>
 
-        <Link href="/counter" className={styles.card}>
-          <h2>ℹ️ Counter</h2>
-          <p>Simple Counter To learn useState</p>
+        <Link href="/building-quote" className={styles.card}>
+          <h2>🛠 Quote Form</h2>
+          <p>Building quote based on user input</p>
         </Link>
 
       </div>
