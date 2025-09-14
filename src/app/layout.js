@@ -10,6 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+
         <Navbar />
         <main style={{ padding: "1rem" }}>
           {children}

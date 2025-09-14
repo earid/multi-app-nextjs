@@ -49,6 +49,28 @@ export default function HomePage() {
         </Link>
 
       </div>
+      <div className={styles.grid}>
+        <Link href="/loancalculator" className={styles.card}>
+          <h2>🧮 Loan Calculetor</h2>
+          <p> Simple Loan Calculetor </p>
+        </Link>
+
+        <Link href="/crypto-prices" className={styles.card}>
+          <h2>💲 Crypto Price </h2>
+          <p>Crypto Prices Fetch from API</p>
+        </Link>
+
+        <Link href="/quiz" className={styles.card}>
+          <h2>🧩 Small Quiz App</h2>
+          <p>small quiz app for practicce</p>
+        </Link>
+
+        <Link href="/building-quote" className={styles.card}>
+          <h2>🛠 Quote Form</h2>
+          <p>Building quote based on user input</p>
+        </Link>
+
+      </div>
     </div>
   );
 }
